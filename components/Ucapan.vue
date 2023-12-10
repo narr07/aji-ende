@@ -81,17 +81,17 @@ onMounted(async () => {
 </script>
 
 <template>
-  <div class="px-10 mx-auto">
+  <div class="px-2 mx-auto md:px-10">
     <div class="max-w-xl mx-auto">
       <div class="text-center">
-        <h1 class="text-3xl font-bold ">
+        <h1 class="text-3xl font-bold">
           Ucapaan Selamat Kepada Mempelai
         </h1>
       </div>
     </div>
     <div class="grid items-center gap-6 mt-12 lg:grid-cols-2 lg:gap-16">
-      <div class="flex flex-col p-4 border rounded-xl bg-4 sm:p-6 lg:p-8 dark:border-gray-700">
-        <h2 class="mb-6 text-xl font-semibold ">
+      <div class="flex flex-col p-4 border drop-shadow-lg rounded-xl bg-4 sm:p-6 lg:p-8 dark:border-gray-700">
+        <h2 class="mb-6 text-xl font-semibold">
           Kirim Ucapan
         </h2>
 
@@ -106,6 +106,8 @@ onMounted(async () => {
               type="text"
               class="block w-full px-3 py-2 rounded-md shadow-sm form-input focus:outline-none focus:ring-1 focus:ring-blue-500"
             >
+            <!-- Pesan kesalahan jika nama kosong -->
+            <p v-if="!nama" class="text-red-600">Nama harus diisi!</p>
           </div>
 
           <div class="mb-4">
@@ -117,28 +119,38 @@ onMounted(async () => {
               v-model="ucapan"
               class="block w-full px-3 py-2 rounded-md shadow-sm form-textarea focus:outline-none focus:ring-1 focus:ring-blue-500"
               rows="5"
-            />
+            ></textarea>
+            <!-- Pesan kesalahan jika ucapan kosong -->
+            <p v-if="!ucapan" class="text-red-600">Ucapan harus diisi!</p>
           </div>
+          
           <div class="mb-4">
-            <label for="hadir" class="block text-sm font-medium text-gray-700">
-              Kehadiran
-            </label>
-            <select
-              id="hadir"
-              v-model="hadir"
-              class="block w-full px-3 py-2 rounded-md shadow-sm form-select focus:outline-none focus:ring-1 focus:ring-blue-500"
-            >
-              <option value="Hadir">
-                Hadir
-              </option>
-              <option value="Tidak">
-                Tidak
-              </option>
-            </select>
+            <label class="block text-sm font-medium text-gray-700">Kehadiran</label>
+            <div class="flex items-center space-x-4">
+              <input
+                id="hadir"
+                v-model="hadir"
+                type="radio"
+                value="Akan Hadir"
+                class="text-blue-500 form-radio focus:ring-blue-500"
+              >
+              <label for="hadir" class="font-medium">Hadir</label>
+
+              <input
+                id="tidak-hadir"
+                v-model="hadir"
+                type="radio"
+                value="Tidak Bisa Hadir"
+                class="text-red-500 form-radio focus:ring-red-500"
+              >
+              <label for="tidak-hadir" class="font-medium">Tidak</label>
+            </div>
+            <!-- Pesan kesalahan jika hadir tidak terpilih -->
+            <p v-if="!hadir" class="text-red-600">Pilih kehadiran!</p>
           </div>
 
           <button
-            class="inline-flex items-center px-4 py-2 font-bold text-white bg-blue-500 rounded-md shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+            class="inline-flex items-center px-4 py-2 font-bold text-white rounded-md shadow-sm bg-2 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
             @click="kirimUcapan"
           >
             Kirim Ucapan
@@ -157,10 +169,14 @@ onMounted(async () => {
           </p>
         </div>
         <div v-else-if="isConnectedSuccess">
-          <div v-for="greeting in greetings" :key="greeting.id">
-            <h2>{{ greeting.nama }}</h2>
-            <p>{{ greeting.ucapan }}</p>
-            <p>{{ greeting.kehadiran }}</p>
+          <div class="p-2 space-y-2 overflow-y-auto rounded-md h-96 bg-2 scroll-m-1">
+            <div v-for="greeting in greetings" :key="greeting.id">
+              <div class="p-2 rounded-md bg-4 ">
+                <h2>{{ greeting.nama }}</h2>
+                <p> {{ greeting.kehadiran }}</p>
+                <p>{{ greeting.ucapan }}</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

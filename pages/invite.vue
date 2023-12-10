@@ -7,11 +7,9 @@ definePageMeta({
 
 <template>
   <div>
-    Ini Halaman Utama Undangan
-    <div class="pt-10">
-      <NuxtLink to="/invite" />
+    <div class="py-24">
+      <Story />
+      <Ucapan />
     </div>
   </div>
 </template>
-
-<style scoped></style>

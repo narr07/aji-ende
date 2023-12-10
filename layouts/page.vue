@@ -1,8 +1,9 @@
-<script lang="ts" setup></script>
-
 <template>
   <div>
-    <AppHeader />    <slot />
+    <AppHeader />
+    <divc class="py-24">
+      <slot />
+    </divc>
   </div>
 </template>
 
