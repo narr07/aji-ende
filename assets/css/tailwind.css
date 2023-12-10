@@ -1,0 +1,52 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-Scripter bg-3 text-2 text-[18px];
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-Nostalgia;
+  }
+}
+
+
+
+/* Webfont: Scripter-Regular */
+@font-face {
+  font-family: 'Scripter';
+  src: url('../fonts/Scripter.woff2') format('woff2'), /* Modern Browsers */
+       url('../fonts/Scripter.otf') format('opentype'); /* Safari, Android, iOS */
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: 'Dream';
+  src: url('../fonts/DreamFlourish.woff2') format('woff2'),
+       url('../fonts/DreamFlourish.woff') format('woff'),
+       url('../fonts/DreamFlourish.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sarthane';
+  src: url('../fonts/Sarthane.woff2') format('woff2'),
+       url('../fonts/Sarthane.woff') format('woff'),
+       url('../fonts/Sarthane.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Nostalgia';
+  src: 
+       url('../fonts/NostalgiaCollective-Regular.woff') format('woff'),
+       url('../fonts/NostalgiaCollective-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
