@@ -4,11 +4,16 @@ export default {
   theme: {
     extend: {
       colors: {
-        1: '#FFF4F4',
-        2: '#606C5D',
-        3: '#F7E6C4',
-        4: '#F1C376',
-        // 5: '#F87171',
+        warna1: '#FFF4F4',
+        warna2: '#606C5D',
+        warna3: '#F7E6C4',
+        warna4: '#F1C376',
+        warna5: '#F87171',
+        warna6: '#9e2a2b',
+        warna7: '#540b0e',
+        warna8: '#f5ebe0',
+        warna9: '#d6ccc2',
+
       },
       fontFamily: {
         Scripter: ['Scripter', 'serif'],

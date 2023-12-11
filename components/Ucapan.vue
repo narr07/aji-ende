@@ -90,7 +90,7 @@ onMounted(async () => {
       </div>
     </div>
     <div class="grid items-center gap-6 mt-12 lg:grid-cols-2 lg:gap-16">
-      <div class="flex flex-col p-4 border drop-shadow-lg rounded-xl bg-4 sm:p-6 lg:p-8 dark:border-gray-700">
+      <div class="flex flex-col p-4 border drop-shadow-lg rounded-xl bg-warna4 sm:p-6 lg:p-8 dark:border-gray-700">
         <h2 class="mb-6 text-xl font-semibold">
           Kirim Ucapan
         </h2>
@@ -150,7 +150,7 @@ onMounted(async () => {
           </div>
 
           <button
-            class="inline-flex items-center px-4 py-2 font-bold text-white rounded-md shadow-sm bg-2 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+            class="inline-flex items-center px-4 py-2 font-bold text-white rounded-md shadow-sm bg-warna2 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
             @click="kirimUcapan"
           >
             Kirim Ucapan
@@ -169,9 +169,9 @@ onMounted(async () => {
           </p>
         </div>
         <div v-else-if="isConnectedSuccess">
-          <div class="p-2 space-y-2 overflow-y-auto rounded-md h-96 bg-2 scroll-m-1">
+          <div class="p-2 space-y-2 overflow-y-auto rounded-md h-96 bg-warna2 scroll-m-1">
             <div v-for="greeting in greetings" :key="greeting.id">
-              <div class="p-2 rounded-md bg-4 ">
+              <div class="p-2 rounded-md bg-warna4 ">
                 <h2>{{ greeting.nama }}</h2>
                 <p> {{ greeting.kehadiran }}</p>
                 <p>{{ greeting.ucapan }}</p>

@@ -36,14 +36,11 @@ const nama = computed(() => {
 </script>
 
 <template>
-  <div class="px-4 text-center md:px-10">
-    <div class="max-w-2xl mx-auto">
-      <h1 class="text-3xl font-bold">
-        The Wedding of
-      </h1>
-      <div class="relative">
-        <div class="p-2 py-10 bg-[url('/badge.svg')] before:absolute bg-center bg-4 bg-no-repeat bg-contain   rounded-md shadow-lg ">
-          <h2 class="m-2 text-5xl font-bold md:m-5 md:text-6xl font-Sarthane">
+  <div class="px-4 text-center md:px-10 ">
+    <div class="">
+      <div class="rounded-md shadow-lg bg-warna4">
+        <div class="m-2 py-10 bg-[url('/badge1.svg')]  bg-warna4    bg-center bg-no-repeat bg-contain  ">
+          <h2 class="m-4 text-5xl font-bold md:m-5 md:text-6xl font-Sarthane">
             Aji Nur Tirtayasa <br> & <br> Ende Nurazizah
           </h2>
         </div>
@@ -53,7 +50,7 @@ const nama = computed(() => {
       </p>
     </div>
     <div>
-      <div v-if="nama" class="p-4 rounded-md bg-2 text-3">
+      <div v-if="nama" class="p-4 rounded-md bg-warna2 text-3">
         <!-- Hanya tampilkan jika ada nama -->
         <h2>Undangan Kepada</h2>
         <p>{{ nama }}</p>
