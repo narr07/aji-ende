@@ -10,6 +10,10 @@ export default defineNuxtConfig({
     'nuxt-particles',
     'nuxt-icon',
   ],
+  image: {
+    format: ['webp'],
+    quality: 80,
+  },
   supabase: {
     redirectOptions: {
       login: '/',

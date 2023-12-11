@@ -6,10 +6,11 @@
 @layer base {
   body {
    
-    @apply bg-[url('/patt.svg')]  md:bg-[url('/patt-md.svg')] md:bg-cover  font-Scripter bg-warna3 text-warna2 text-[18px]  ;
+    @apply bg-[url('/patt.svg')]  md:bg-[url('/patt-md.svg')] md:bg-cover  font-Scripter bg-warna3 text-warna2 ;
+    scroll-behavior: smooth; 
   }
   p {
-    @apply font-Scripter tracking-wider;
+    @apply font-Scripter text-lg tracking-wider;
   }
   h1, h2, h3, h4, h5, h6 {
     @apply font-Nostalgia tracking-wider;
