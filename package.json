@@ -23,8 +23,11 @@
     "vue-router": "^4.2.5"
   },
   "dependencies": {
+    "@nuxt/image": "^1.1.0",
     "@nuxtjs/supabase": "^1.1.4",
+    "@vueuse/nuxt": "^10.7.0",
     "aos": "^2.3.4",
+    "nuxt-icon": "^0.6.7",
     "nuxt-particles": "^0.1.5"
   }
 }

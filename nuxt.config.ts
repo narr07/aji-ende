@@ -4,8 +4,11 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
     '@nuxtjs/supabase',
+    '@vueuse/nuxt',
+    '@nuxt/image',
     '@hypernym/nuxt-anime',
     'nuxt-particles',
+    'nuxt-icon',
   ],
   supabase: {
     redirectOptions: {

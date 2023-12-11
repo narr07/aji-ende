@@ -7,8 +7,12 @@ definePageMeta({
 
 <template>
   <div>
-    <div class="py-24">
-      <Story />
+    <!-- <NuxtParticles
+      id="tsparticles2"
+      url="/particles2.json"
+    /> -->
+    <div class="">
+      <Section2 />
       <div data-aos="fade-right">
         <Ucapan />
       </div>
