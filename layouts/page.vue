@@ -1,9 +1,9 @@
 <template>
   <div>
     <AppHeader />
-    <divc class="py-24">
+    <div class="py-24">
       <slot />
-    </divc>
+    </div>
   </div>
 </template>
 

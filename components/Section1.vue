@@ -15,7 +15,7 @@ const countdown = computed(() => {
   const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60))
   const seconds = Math.floor((diff % (1000 * 60)) / 1000)
 
-  return `${days} hari, ${hours} jam --- ${minutes} menit, ${seconds} detik`
+  return `${days} hari, ${hours} jam  ${minutes} menit, ${seconds} detik`
 })
 
 setInterval(() => {
@@ -36,27 +36,33 @@ const nama = computed(() => {
 </script>
 
 <template>
-  <div class="px-4 text-center md:px-10 ">
-    <div class="">
-      <div class="rounded-md shadow-lg bg-warna4">
-        <div class="m-2 py-10 bg-[url('/badge1.svg')]  bg-warna4    bg-center bg-no-repeat bg-contain  ">
-          <h2 class="m-4 text-5xl font-bold md:m-5 md:text-6xl font-Sarthane">
-            Aji Nur Tirtayasa <br> & <br> Ende Nurazizah
-          </h2>
-        </div>
-      </div>
-      <p class="mt-4 text-2xl font-semibold">
+  <div class="px-4 text-center ">
+    <div class="m-2  py-10 bg-[url('/badge.svg')]   bg-center bg-no-repeat  bg-contain">
+      <h2 class="m-4 text-5xl font-bold md:m-5 md:text-6xl font-Sarthane">
+        Aji Nur Tirtayasa <br> & <br> Ende Nurazizah
+      </h2>
+    </div>
+    <div class="inline-block p-4 my-2 rounded bg-warna2 text-warna1 ">
+      <h2 class="text-lg tracking-widest md:text-3xl">
         21 Januari 2024
-      </p>
+      </h2>
+      <h2 class="mt-2 text-lg font-Scripter md:text-2xl">
+        {{ countdown }}
+      </h2>
     </div>
-    <div>
-      <div v-if="nama" class="p-4 rounded-md bg-warna2 text-3">
+    <div class="my-4 rounded-md ">
+      <div v-if="nama" class="inline-block p-2 px-10 bg-white rounded-md shadow-md">
         <!-- Hanya tampilkan jika ada nama -->
-        <h2>Undangan Kepada</h2>
-        <p>{{ nama }}</p>
+        <p class="text-sm">
+          Kepada:
+        </p>
+        <h2 class="text-xl md:text-2xl">
+          {{ nama }}
+        </h2>
       </div>
     </div>
-    <h2>Waktu Menuju Hari H</h2>
-    <p>{{ countdown }}</p>
+    <p class="text-sm">
+      Tanpa Mengurangi Rasa Hormat, Kami Mengundang Bapak/Ibu/Saudara/i untuk Hadir di Acara Kami.
+    </p>
   </div>
 </template>

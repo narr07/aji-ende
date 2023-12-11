@@ -9,7 +9,9 @@ definePageMeta({
   <div>
     <div class="py-24">
       <Story />
-      <Ucapan />
+      <div data-aos="fade-right">
+        <Ucapan />
+      </div>
     </div>
   </div>
 </template>
