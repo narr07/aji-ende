@@ -9,8 +9,10 @@ onMounted(() => {
   $anime({
     targets: '.btn',
     scale: [0.9, 1],
+    duration: 500,
     direction: 'alternate',
     loop: true,
+    easing: 'easeInOutSine',
   })
 })
 </script>

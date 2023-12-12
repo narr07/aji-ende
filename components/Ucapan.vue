@@ -107,7 +107,9 @@ onMounted(async () => {
               class="block w-full px-3 py-2 rounded-md shadow-sm form-input focus:outline-none focus:ring-1 focus:ring-blue-500"
             >
             <!-- Pesan kesalahan jika nama kosong -->
-            <p v-if="!nama" class="text-red-600">Nama harus diisi!</p>
+            <p v-if="!nama" class="text-red-600">
+              Nama harus diisi!
+            </p>
           </div>
 
           <div class="mb-4">
@@ -119,11 +121,13 @@ onMounted(async () => {
               v-model="ucapan"
               class="block w-full px-3 py-2 rounded-md shadow-sm form-textarea focus:outline-none focus:ring-1 focus:ring-blue-500"
               rows="5"
-            ></textarea>
+            />
             <!-- Pesan kesalahan jika ucapan kosong -->
-            <p v-if="!ucapan" class="text-red-600">Ucapan harus diisi!</p>
+            <p v-if="!ucapan" class="text-red-600">
+              Ucapan harus diisi!
+            </p>
           </div>
-          
+
           <div class="mb-4">
             <label class="block text-sm font-medium text-gray-700">Kehadiran</label>
             <div class="flex items-center space-x-4">
@@ -146,7 +150,9 @@ onMounted(async () => {
               <label for="tidak-hadir" class="font-medium">Tidak</label>
             </div>
             <!-- Pesan kesalahan jika hadir tidak terpilih -->
-            <p v-if="!hadir" class="text-red-600">Pilih kehadiran!</p>
+            <p v-if="!hadir" class="text-red-600">
+              Pilih kehadiran!
+            </p>
           </div>
 
           <button
