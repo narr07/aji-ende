@@ -35,6 +35,7 @@ onMounted(() => {
                     21 Januari 2024
                   </span>
                 </h3>
+                <Waktu />
                 <h3 class="text-xl font-bold text-center md:text-2xl">
                   08.00 - 16.00 WIB
                 </h3>

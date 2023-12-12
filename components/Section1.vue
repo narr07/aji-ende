@@ -25,6 +25,7 @@ const nama = computed(() => {
       <h2 class="text-xl tracking-widest md:text-3xl">
         21 Januari 2024
       </h2>
+      <Waktu />
     </div>
     <div class="my-4 rounded-md ">
       <div v-if="nama" class="inline-block p-2 px-10 bg-white rounded-md shadow-md">

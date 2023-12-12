@@ -3,6 +3,15 @@ definePageMeta({
   layout: 'default',
 
 })
+useSeoMeta({
+  title: 'Undangan',
+  description: 'Pernikahan Aji Nur Tirtayasa & Ende Nurazizah - Minggu 24 Januari 2024 - Kediaman Mempelai Wanita',
+
+})
+defineOgImageComponent('BlogPost', {
+  title: 'Undangan',
+  description: 'Pernikahan Aji Nur Tirtayasa & Ende Nurazizah - Minggu 24 Januari 2024 - Kediaman Mempelai Wanita',
+})
 
 const { $anime } = useNuxtApp()
 

@@ -1,34 +1,48 @@
+<script setup>
+const noAji = '0429375292' // Replace with actual number
+const noEnde = '1436190317' // Replace with actual number
+const clipboard = useClipboard()
+
+async function copyAji() {
+  await clipboard.copy(noAji)
+  console.log('Nomor rekening 0429375292 berhasil disalin!')
+}
+async function copyEnde() {
+  await clipboard.copy(noEnde)
+  console.log('Nomor rekening 1436190317 berhasil disalin!')
+}
+</script>
+
 <template>
   <div>
-    <section class="text-gray-600 body-font">
+    <section class="max-w-4xl px-2 mx-auto body-font">
       <div class="container px-5 py-24 mx-auto">
-        <div class="flex flex-wrap -mx-4 -mb-10 text-center">
-          <div class="px-4 mb-10 sm:w-1/2">
-            <div class="h-64 overflow-hidden rounded-lg">
-              <img alt="content" class="object-cover object-center w-full h-full" src="https://dummyimage.com/1201x501">
+        <h2 class="py-4 text-xl text-center md:text-3xl">
+          Gift Untuk  Mempelai
+        </h2>
+        <div class="grid gap-6 -mx-4 text-center md:grid-cols-2">
+          <div class="">
+            <div class="py-4 text-xl rounded-md ring-2 ring-warna2 md:text-3xl bg-warna4">
+              BNI
+              <br>
+              0429375292
+              <br>
+              Aji Nur Tirtayasa
             </div>
-            <h2 class="mt-6 mb-3 text-2xl font-medium text-gray-900 title-font">
-              Buy YouTube Videos
-            </h2>
-            <p class="text-base leading-relaxed">
-              Williamsburg occupy sustainable snackwave gochujang. Pinterest cornhole brunch, slow-carb neutra irony.
-            </p>
-            <button class="flex px-5 py-2 mx-auto mt-6 text-white bg-indigo-500 border-0 rounded focus:outline-none hover:bg-indigo-600">
-              Button
+            <button class="px-4 py-2 mt-4 text-xl font-bold text-white rounded-md bg-warna2" @click="copyAji">
+              Salin
             </button>
           </div>
-          <div class="px-4 mb-10 sm:w-1/2">
-            <div class="h-64 overflow-hidden rounded-lg">
-              <img alt="content" class="object-cover object-center w-full h-full" src="https://dummyimage.com/1202x502">
+          <div class="">
+            <div class="py-4 text-xl rounded-md ring-2 ring-warna2 md:text-3xl bg-warna4">
+              BNI
+              <br>
+              1436190317
+              <br>
+              Ende Nurazizah
             </div>
-            <h2 class="mt-6 mb-3 text-2xl font-medium text-gray-900 title-font">
-              The Catalyzer
-            </h2>
-            <p class="text-base leading-relaxed">
-              Williamsburg occupy sustainable snackwave gochujang. Pinterest cornhole brunch, slow-carb neutra irony.
-            </p>
-            <button class="flex px-5 py-2 mx-auto mt-6 text-white bg-indigo-500 border-0 rounded focus:outline-none hover:bg-indigo-600">
-              Button
+            <button class="px-4 py-2 mt-4 text-xl font-bold text-white rounded-md bg-warna2" @click="copyEnde">
+              Salin
             </button>
           </div>
         </div>
