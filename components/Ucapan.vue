@@ -26,6 +26,11 @@ const isConnectedSuccess = ref(false)
 const nama = ref('')
 const ucapan = ref('')
 const hadir = ref('')
+const isHadir = ref(null)
+
+onMounted(() => {
+  isHadir.value = hadir.value === 'Hadir'
+})
 
 async function kirimUcapan() {
   const client = useSupabaseClient() // Deklarasikan variabel client di dalam function
@@ -81,7 +86,7 @@ onMounted(async () => {
 </script>
 
 <template>
-  <div class="px-2 mx-auto md:px-10">
+  <div class="px-2 pb-24 mx-auto md:px-10">
     <div class="max-w-xl mx-auto">
       <div class="text-center">
         <h1 class="text-3xl font-bold">
@@ -135,7 +140,7 @@ onMounted(async () => {
                 id="hadir"
                 v-model="hadir"
                 type="radio"
-                value="Akan Hadir"
+                value="Hadir"
                 class="text-blue-500 form-radio focus:ring-blue-500"
               >
               <label for="hadir" class="font-medium">Hadir</label>
@@ -175,12 +180,15 @@ onMounted(async () => {
           </p>
         </div>
         <div v-else-if="isConnectedSuccess">
-          <div class="p-2 space-y-2 overflow-y-auto rounded-md h-96 bg-warna2 scroll-m-1">
+          <div class="p-2 space-y-2 overflow-hidden overflow-y-auto rounded-md ring-2 ring-warna2 h-96 bg-warna2 scroll-m-1">
             <div v-for="greeting in greetings" :key="greeting.id">
-              <div class="p-2 rounded-md bg-warna4 ">
-                <h2>{{ greeting.nama }}</h2>
-                <p> {{ greeting.kehadiran }}</p>
-                <p>{{ greeting.ucapan }}</p>
+              <div class="p-2 rounded-md bg-warna1 ">
+                <div class="flex justify-between">
+                  <h2 class="text-lg">{{ greeting.nama }}</h2>
+                  <Icon :name="greeting.kehadiran === 'Hadir' ? 'ph:check-circle-duotone' : 'ph:x-circle-duotone'" size="24" />
+                </div>
+                
+                <p> Pesan: <br>{{ greeting.ucapan }}</p>
               </div>
             </div>
           </div>

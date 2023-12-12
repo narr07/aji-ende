@@ -8,7 +8,7 @@ const { $anime } = useNuxtApp()
 
 onMounted(() => {
   $anime({
-    targets: '.btn',
+    targets: '.ok',
     scale: [0.9, 1],
     duration: 500,
     direction: 'alternate',
@@ -32,7 +32,7 @@ onMounted(() => {
     <div>
       <Section1 />
     </div>
-    <div class="pt-10 btn">
+    <div class="pt-10 ok">
       <NuxtLink class="px-2 py-3 rounded-md ring-2 ring-warna2 bg-warna4" to="/invite">
         Buka Undangan
       </NuxtLink>
