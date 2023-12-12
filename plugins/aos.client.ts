@@ -1,3 +1,4 @@
+/* eslint-disable new-cap */
 // plugins/aos.client.ts
 
 import AOS from 'aos'

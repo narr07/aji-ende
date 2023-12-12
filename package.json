@@ -12,7 +12,6 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "@nuxt/image": "^1.1.0",
     "@nuxtjs/supabase": "^1.1.4",
     "@vueuse/nuxt": "^10.7.0",
     "aos": "^2.3.4",
@@ -25,6 +24,7 @@
     "@nuxt/devtools": "latest",
     "@nuxtjs/google-fonts": "^3.1.1",
     "@nuxtjs/tailwindcss": "^6.10.1",
+    "@nuxtseo/module": "^2.0.0-beta.50",
     "eslint": "^8.55.0",
     "eslint-plugin-format": "^0.1.0",
     "nuxt": "^3.8.2",

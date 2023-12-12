@@ -184,10 +184,12 @@ onMounted(async () => {
             <div v-for="greeting in greetings" :key="greeting.id">
               <div class="p-2 rounded-md bg-warna1 ">
                 <div class="flex justify-between">
-                  <h2 class="text-lg">{{ greeting.nama }}</h2>
+                  <h2 class="text-lg">
+                    {{ greeting.nama }}
+                  </h2>
                   <Icon :name="greeting.kehadiran === 'Hadir' ? 'ph:check-circle-duotone' : 'ph:x-circle-duotone'" size="24" />
                 </div>
-                
+
                 <p> Pesan: <br>{{ greeting.ucapan }}</p>
               </div>
             </div>

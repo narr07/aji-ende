@@ -5,16 +5,15 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@nuxtjs/supabase',
     '@vueuse/nuxt',
-    '@nuxt/image',
+
     '@hypernym/nuxt-anime',
+    '@nuxtseo/module',
     'nuxt-particles',
+    'nuxt-og-image',
     'nuxt-icon',
     '@nuxtjs/google-fonts',
   ],
-  image: {
-    quality: 90,
-    formats: ['webp'],
-  },
+
   googleFonts: {
     display: 'swap',
     prefetch: true,
@@ -37,6 +36,12 @@ export default defineNuxtConfig({
       },
 
     },
+  },
+  site: {
+    url: 'https://aji-ende.netlify.app/',
+    name: 'Aji & Ende',
+    description: 'Pernikahan Aji Nurtirtayasa & Ende Nurazizah',
+    defaultLocale: 'id',
   },
 
   supabase: {

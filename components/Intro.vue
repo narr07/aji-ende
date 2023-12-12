@@ -42,6 +42,5 @@ onMounted(() => {
         <Icon name="ph:arrow-fat-lines-down-duotone" size="54" />
       </div>
     </div>
-   
   </section>
 </template>
