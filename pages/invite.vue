@@ -7,13 +7,14 @@ definePageMeta({
 </script>
 
 <template>
-  <div class="scroll-smooth">
+  <div class="overflow-hidden scroll-smooth">
     <NuxtParticles
       id="tsparticles2"
       url="/particles2.json"
     />
     <div class="">
-      <Intro id="mempelai" />
+      <Intro />
+      <Mempelai id="mempelai"  />
       <div data-aos="fade-right">
         <Ucapan id="ucapan" />
       </div>

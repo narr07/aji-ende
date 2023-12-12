@@ -9,10 +9,11 @@ export default {
         warna3: '#F7E6C4',
         warna4: '#F1C376',
         warna5: '#F87171',
-        warna6: '#9e2a2b',
+        warna6: '#3F4A3E',
         warna7: '#540b0e',
         warna8: '#f5ebe0',
         warna9: '#d6ccc2',
+        warna0: '#A28550',
 
       },
       fontFamily: {
