@@ -16,10 +16,10 @@ export default {
 
       },
       fontFamily: {
-        Scripter: ['Scripter', 'serif'],
-        Dream: ['Dream', 'sans-serif'],
-        Sarthane: ['Sarthane', 'serif'],
-        Nostalgia: ['Nostalgia', 'serif'],
+        Eczar: ['Eczar', 'serif'],
+        Redressed: ['Redressed', 'sans-serif'],
+        Kreon: ['Kreon', 'serif'],
+        Niconne: ['Niconne', 'serif'],
       },
     },
   },

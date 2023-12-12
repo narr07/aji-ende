@@ -38,7 +38,7 @@ const nama = computed(() => {
 <template>
   <div class="px-4 text-center ">
     <div class="m-2  py-10 bg-[url('/badge.svg')]   bg-center bg-no-repeat  bg-contain">
-      <h2 class="m-4 text-5xl font-bold md:m-5 md:text-6xl font-Sarthane">
+      <h2 class="m-4 text-5xl font-bold md:m-5 md:text-6xl font-Kreon">
         Aji Nur Tirtayasa <br> & <br> Ende Nurazizah
       </h2>
     </div>
@@ -46,7 +46,7 @@ const nama = computed(() => {
       <h2 class="text-lg tracking-widest md:text-3xl">
         21 Januari 2024
       </h2>
-      <h2 class="mt-2 text-lg font-Scripter md:text-2xl">
+      <h2 class="mt-2 text-lg font-Eczar md:text-2xl">
         {{ countdown }}
       </h2>
     </div>

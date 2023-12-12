@@ -9,12 +9,35 @@ export default defineNuxtConfig({
     '@hypernym/nuxt-anime',
     'nuxt-particles',
     'nuxt-icon',
+    '@nuxtjs/google-fonts',
   ],
   image: {
     quality: 90,
     formats: ['webp'],
   },
+  googleFonts: {
+    display: 'swap',
+    prefetch: true,
+    preconnect: true,
+    preload: true,
+    // download: true,
+    // outputDir: "assets",
+    // stylePath: "fonts.css",
+    // fontsDir: "fonts",
+    // overwriting: true,
+    // fontsPath: 'fonts',
+    families: {
+      Redressed: {
+        wght: [400],
+      },
+      Kreon: '300..700',
+      Eczar: '400..800',
+      Niconne: {
+        wght: [400],
+      },
 
+    },
+  },
   supabase: {
     redirectOptions: {
       login: '/',

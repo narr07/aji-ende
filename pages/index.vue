@@ -3,6 +3,7 @@ definePageMeta({
   layout: 'default',
 
 })
+
 const { $anime } = useNuxtApp()
 
 onMounted(() => {
