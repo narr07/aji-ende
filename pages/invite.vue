@@ -13,7 +13,7 @@ definePageMeta({
       url="/particles2.json"
     />
     <div class="">
-      <Section2 />
+      <Intro id="mempelai" />
       <div data-aos="fade-right">
         <Ucapan id="ucapan" />
       </div>

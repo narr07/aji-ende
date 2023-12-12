@@ -45,6 +45,13 @@ const musicIcon = computed(() => isPlaying.value ? 'pepicons-print:music-note-do
         </li>
         <li>
           <div>
+            <NuxtLink href="#mempelai">
+              Mempelai
+            </NuxtLink>
+          </div>
+        </li>
+        <li>
+          <div>
             <NuxtLink href="#ucapan">
               Ucapkan Selamat
             </NuxtLink>

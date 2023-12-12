@@ -8,7 +8,7 @@
     scroll-behavior: smooth;
   }
   p {
-    @apply font-Scripter text-lg tracking-wider;
+    @apply font-Scripter  tracking-wider;
   }
   h1,
   h2,

@@ -1,7 +1,7 @@
 <template>
   <div>
     <AppHeader />
-    <div class="py-16 ">
+    <div>
       <slot />
     </div>
   </div>
