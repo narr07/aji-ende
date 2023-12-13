@@ -3,15 +3,6 @@ definePageMeta({
   layout: 'default',
 
 })
-useSeoMeta({
-  title: 'Undangan',
-  description: 'Pernikahan Aji Nur Tirtayasa & Ende Nurazizah - Minggu 24 Januari 2024 - Kediaman Mempelai Wanita',
-
-})
-defineOgImageComponent('BlogPost', {
-  title: 'Undangan',
-  description: 'Pernikahan Aji Nur Tirtayasa & Ende Nurazizah - Minggu 24 Januari 2024 - Kediaman Mempelai Wanita',
-})
 
 const { $anime } = useNuxtApp()
 
@@ -24,6 +15,21 @@ onMounted(() => {
     loop: true,
     easing: 'easeInOutSine',
   })
+})
+useSeoMeta({
+  title: 'Undangan',
+  description: 'Pernikahan Aji Nur Tirtayasa & Ende Nurazizah - Minggu 24 Januari 2024 - Kediaman Mempelai Wanita',
+  ogTitle: 'Undangan',
+  ogDescription: 'Pernikahan Aji Nur Tirtayasa & Ende Nurazizah - Minggu 24 Januari 2024 - Kediaman Mempelai Wanita',
+  ogImage: 'https://aji-ende.netlify.app/__og-image__/image/invite/og.png',
+  ogUrl: 'https://aji-ende.netlify.app/',
+
+  twitterCard: 'summary_large_image',
+
+})
+defineOgImageComponent('BlogPost', {
+  title: 'Undangan Pernikahan Aji Nur Tirtayasa & Ende Nurazizah - Minggu 24 Januari 2024 - Kediaman Mempelai Wanita',
+  description: 'Rajagaluh Kidul, Kec. Rajagaluh, Kab. Majalengka, Jawa Barat 45472',
 })
 </script>
 

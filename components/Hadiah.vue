@@ -5,11 +5,9 @@ const clipboard = useClipboard()
 
 async function copyAji() {
   await clipboard.copy(noAji)
-  console.log('Nomor rekening 0429375292 berhasil disalin!')
 }
 async function copyEnde() {
   await clipboard.copy(noEnde)
-  console.log('Nomor rekening 1436190317 berhasil disalin!')
 }
 </script>
 
